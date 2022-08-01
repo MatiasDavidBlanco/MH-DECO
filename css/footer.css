@@ -22,7 +22,7 @@ footer{
 }
 
 .footer-social img{
-    padding: 5px;
+    padding: 10px;
 }
 
 .footer-social p{
@@ -42,5 +42,11 @@ footer h1{
 .footer-menu a{
     text-decoration: none;
     color: var(--colorWite);
+    padding: 10px;
+ 
+}
+.footer-menu a:hover{
+    text-shadow: 1px 0.5px 5px var(--colorBlack);
+    padding: 10px;
  
 }

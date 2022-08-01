@@ -1,7 +1,7 @@
 nav {
     z-index: 1;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     position: fixed;
     background-color: var(--colorWhite);
@@ -9,11 +9,9 @@ nav {
     width: 100%;
     transition: background-color, box-shadow 0.6s;
   }
-  nav .logo {
-    height: 30px;
-    margin: 2px;
-    width: 165px;
-    fill: var(--colorWhite);
+  nav h1{
+
+    font-weight: 500;
   }
   nav .menu {
     display: flex;
