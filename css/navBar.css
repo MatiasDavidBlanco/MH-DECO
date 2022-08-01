@@ -1,0 +1,82 @@
+nav {
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: var(--colorWhite);
+    box-shadow: 0px 0px 15px var(--colorPrincipal);
+    width: 100%;
+    transition: background-color, box-shadow 0.6s;
+  }
+  nav .logo {
+    height: 30px;
+    margin: 2px;
+    width: 165px;
+    fill: var(--colorWhite);
+  }
+  nav .menu {
+    display: flex;
+  }
+  nav .menu a {
+    text-decoration: none;
+    color: var(--colorWhite);
+    padding: 7px;
+    margin: 13px;
+    transition: box-shadow 0.3s;
+  }
+  nav .menu a:hover {
+    box-shadow: 0px 3px var(--colorPrincipal);
+  }
+  [data-scroll="0"] nav {
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: none;
+  }
+
+  @media (max-width: 650px) {
+    .navbar {
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      position: relative;
+      box-shadow: 0px 0px 15px var(--colorPrincipal)!important;
+    }
+    nav .logo {
+      margin-top: 5px; /*TODO*/
+    }
+    .navbar label {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin: 5px;
+      padding: 5px 10px;
+      height: 31px;
+    }
+    [data-scroll="0"] nav {
+      background-color: var(--colorPrincipal);
+      box-shadow: none;
+    }
+    .navbar input#menuDisplay {
+      display: none;
+    }
+    .menuDiv {
+      height: 3px;
+      width: 21px;
+      background: var(--colorPrincipal);
+      border-radius: 10px;
+    }
+    nav #menuDisplay {
+      height: 20px;
+    }
+    input#menuDisplay:checked ~ .menu {
+      display: flex;
+    }
+    nav .menu {
+      display: none;
+    }
+    nav .menu {
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
