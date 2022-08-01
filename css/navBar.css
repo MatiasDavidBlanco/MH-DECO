@@ -10,7 +10,7 @@ nav {
     transition: background-color, box-shadow 0.6s;
   }
   nav h1{
-
+    font-size:var(--fontTitle)
     font-weight: 500;
   }
   nav .menu {
