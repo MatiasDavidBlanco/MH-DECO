@@ -11,19 +11,29 @@ footer{
     background: var(--colorPrincipal);
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    padding: 50px;
 }
 
 .footer-social{
     display: flex;
+    align-items: center;
     color: var(--colorWite);
 }
 
 .footer-social img{
-    height: 43px;
-    width: 43px;
+    padding: 5px;
 }
+
+.footer-social p{
+    padding: 5px;
+}
+
 footer h1{
     color: var(--colorWite);
+    font-weight: 400;
+    line-height: 47px;
+    letter-spacing: 0.23em;
 }
 .footer-menu{
     display: flex;

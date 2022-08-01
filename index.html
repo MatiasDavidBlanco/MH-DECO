@@ -9,10 +9,7 @@
 </head>
 <body>
     <nav class="navbar">
-        <svg class="logo">
-          <!--TODO sacar mas y sacar navbar-->
-          <use xlink:href="#DoThinkLogoSvg"></use>
-        </svg>
+       <h1></h1>
         <label for="menuDisplay">
           <div class="menuDiv"></div>
           <div class="menuDiv"></div>
@@ -21,15 +18,13 @@
         <input type="checkbox" id="menuDisplay" />
         <div class="menu">
           <a href="#hero">Inicio</a>
-          <a href="#services">Servicios</a>
-          <a href="#aproach-process">Clientes</a>
-          <a href="#team">Equipo</a>
+          <a href="#services">Productos</a>
+          <a href="#aproach-process">Nosotros</a>
           <a href="#contact">Contacto</a>
-          <a href="/wiki.html">wiki</a>
         </div>
       </nav>
       <div style="height:1000px"> </div>
-      
+
       <footer>
         <div class="footer-social">
             <p>Siguenos en</p>
@@ -44,5 +39,12 @@
             <a href="#">CONTACTO</a>
         </div>
       </footer>
+      <script>
+        function storeScroll() {
+          document.documentElement.dataset.scroll = window.scrollY;
+        }
+        document.addEventListener('scroll', function () { storeScroll() });
+        storeScroll();
+      </script>
 </body>
 </html>
