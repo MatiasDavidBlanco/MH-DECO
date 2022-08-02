@@ -11,9 +11,10 @@
 
 .carousel__contenedor{
     position: relative;
+    padding: 100px;
 }
 .carousel__anterior,
-.carousel__siguiente{
+.carousel__siguiente {
     position: absolute;
     display: block;
     width: 30px;
@@ -24,10 +25,13 @@
     line-height: 30px;
     text-align: center;
     background: none;
-    color: #fff;
-    opacity: 20%;
+    color: rgb(233, 10, 10);
+    /* opacity: 20%; */
 }
 
 .carousel__anterior{
     left:-30px
 }
+.carousel__siguente{
+    right:-30px
+} 
