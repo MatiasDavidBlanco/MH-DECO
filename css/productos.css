@@ -26,7 +26,12 @@
     text-align: center;
     background: none;
     color: rgb(8, 8, 8);
+    opacity: 20%;
     
+}
+.carousel__anterior:hover,
+.carousel__siguiente:hover{
+    opacity: 100%;
 }
 
 .carousel__anterior{
@@ -35,3 +40,11 @@
 .carousel__siguiente{
     right: 50px
 } 
+
+.carousel__lista{
+     overflow: hidden;
+}
+
+.carousel__elemento{
+    text-align: center;
+}
