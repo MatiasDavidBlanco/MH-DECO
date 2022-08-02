@@ -1,50 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MH-Deco</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <nav class="navbar">
-       <h1>MH.DECO</h1>
-        <label for="menuDisplay">
-          <div class="menuDiv"></div>
-          <div class="menuDiv"></div>
-          <div class="menuDiv"></div>
-        </label>
-        <input type="checkbox" id="menuDisplay" />
-        <div class="menu">
-          <a href="#hero">Inicio</a>
-          <a href="#services">Productos</a>
-          <a href="#aproach-process">Nosotros</a>
-          <a href="#contact">Contacto</a>
-        </div>
-      </nav>
-      <div style="height:1000px"> </div>
 
-      <footer>
-        <div class="footer-social">
-            <p>Siguenos en</p>
-            <a href=""><img src="img/instagram.svg"></a>
-            <a href=""><img src="img/face.svg"></a>
-        </div>
-        <h1>MH.DECO</h1>
-        <div class="footer-menu">
-            <a href="#">INICIO</a>
-            <a href="#">PRODUCTOS</a>
-            <a href="#">NOSOTROS</a>
-            <a href="#">CONTACTO</a>
-        </div>
-      </footer>
-      <script>
-        function storeScroll() {
-          document.documentElement.dataset.scroll = window.scrollY;
-        }
-        document.addEventListener('scroll', function () { storeScroll() });
-        storeScroll();
-      </script>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MH-Deco</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <h1>MH.DECO</h1>
+    <label for="menuDisplay">
+      <div class="menuDiv"></div>
+      <div class="menuDiv"></div>
+      <div class="menuDiv"></div>
+    </label>
+    <input type="checkbox" id="menuDisplay" />
+    <div class="menu">
+      <a href="#hero">Inicio</a>
+      <a href="#services">Productos</a>
+      <a href="#aproach-process">Nosotros</a>
+      <a href="#contact">Contacto</a>
+    </div>
+  </nav>
+  <section class="hero">
+    <div class="heroTitle">
+      <h1>Muebles Unicos A tu disposición</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus maxime voluptas, illo officiis hic,
+        tempora incidunt voluptatem optio ut dolorem saepe dolor quas? Cum debitis, ratione quidem voluptas harum natus!
+      </p>
+      <a href="#">Explorar Productos</a>
+    </div>
+    <div class="heroCarusel">
+      <a href="#" alt=""> </a>
+        <img src="css/kam-idris-hYb7kbu4x7E-unsplash 1.png" alt="">
+        <a href="#" alt=""></a>
+    </div>
+  </section>
+
+  <section class="productos">
+    <div class="titulo">
+      <h1>PRODUCTOS</h1>
+      <img src="img/Arrow 1.svg" alt="flecha">
+    </div>
+    <div class="carrusel">
+      <div class="card">
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-social">
+      <p>Siguenos en</p>
+      <a href=""><img src="img/instagram.svg"></a>
+      <a href=""><img src="img/face.svg"></a>
+    </div>
+    <h1>MH.DECO</h1>
+    <div class="footer-menu">
+      <a href="#">INICIO</a>
+      <a href="#">PRODUCTOS</a>
+      <a href="#">NOSOTROS</a>
+      <a href="#">CONTACTO</a>
+    </div>
+  </footer>
+  <script>
+    function storeScroll() {
+      document.documentElement.dataset.scroll = window.scrollY;
+    }
+    document.addEventListener('scroll', function () { storeScroll() });
+    storeScroll();
+  </script>
 </body>
+
 </html>

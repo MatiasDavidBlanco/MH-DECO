@@ -1,0 +1,25 @@
+.hero{
+    display: flex;
+    padding: 50px 150px;
+}
+.heroTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.heroTitle h1{
+    font-size: var(--FontTitle);
+}
+.heroTitle p{
+    font-size: var(--FontParagraf);
+}
+.hero img{
+    box-shadow: 23px 23px white, 25px 25px olive, 25px 21px olive, 21px 25px olive;
+    width: 450px;
+    margin: 20px;
+}
+.heroCarusel{
+    box-sizing:border-box;
+    display: flex;
+    justify-content: center;
+}

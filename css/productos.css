@@ -1,0 +1,10 @@
+.titulo{
+    display: flex;
+    
+    
+}
+
+.titulo h1{
+    font-size: var(--FontTitle);
+    font-weight: 400;
+}
