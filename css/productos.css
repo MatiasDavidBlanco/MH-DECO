@@ -30,8 +30,8 @@
 }
 
 .carousel__anterior{
-    margin-left:0px
+    left:-30px
 }
-.carousel__siguente{
-    margin-right:330px
+.carousel__siguiente{
+    right: 30px
 } 
