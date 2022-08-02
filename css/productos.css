@@ -19,7 +19,7 @@
     display: block;
     width: 30px;
     height: 30px;
-    border: none;
+    /* border: none; */
     top: calc(50% - 35px);
     cursor: pointer;
     line-height: 30px;
@@ -30,8 +30,8 @@
 }
 
 .carousel__anterior{
-    left:-30px
+    margin-left:0px
 }
 .carousel__siguente{
-    right:-30px
+    margin-right:330px
 } 
