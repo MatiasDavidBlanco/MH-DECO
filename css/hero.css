@@ -23,18 +23,13 @@
     width:50%;
     box-shadow: 23px 23px white, 25px 25px var(--colorPrincipal), 25px 21px var(--colorPrincipal), 21px 25px var(--colorPrincipal);
     margin: 20px;
-    animation-name: urlChange;
-    animation-duration: 13s;
 }
 .hero a{
     text-decoration:none;
     text-align:center;
+    padding:20px;
 }
-@keyframes urlChange{
-    from{background-image: url("img/Rectangle4.png");}
-    50%{background-image: url("img/kam-idris-hYb7kbu4x7E-unsplash 1.png");}
-    to {background-image: url("img/Rectangle 4.png");}
-}
+
 .heroCarusel{
     box-sizing:border-box;
     display: flex;
