@@ -19,14 +19,14 @@
     display: block;
     width: 30px;
     height: 30px;
-    /* border: none; */
+    border: none;
     top: calc(50% - 35px);
     cursor: pointer;
     line-height: 30px;
     text-align: center;
     background: none;
-    color: rgb(233, 10, 10);
-    /* opacity: 20%; */
+    color: rgb(8, 8, 8);
+    
 }
 
 .carousel__anterior{
