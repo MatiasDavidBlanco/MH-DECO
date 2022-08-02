@@ -4,6 +4,6 @@
 }
 
 .titulo-contacto h1{
-    font-size: var(--FontTitle);
+    font-size: var(--FontNameSection);
     font-weight: 400;
 }

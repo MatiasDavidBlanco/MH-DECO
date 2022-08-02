@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MH-Deco</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -27,36 +28,72 @@
   </nav>
   <section class="hero">
     <div class="heroTitle">
-      <h1>Muebles Unicos A tu disposición</h1>
+      <h1>Muebles Unicos</h1> <h1>A tu disposición</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus maxime voluptas, illo officiis hic,
         tempora incidunt voluptatem optio ut dolorem saepe dolor quas? Cum debitis, ratione quidem voluptas harum natus!
       </p>
       <a href="#">Explorar Productos</a>
     </div>
     <div class="heroCarusel">
-      <a href="#" alt=""><</a>
-        <img src="css/kam-idris-hYb7kbu4x7E-unsplash 1.png" alt="">
-        <a href="#" alt="">></a>
+      <a href="#" alt="">atras</a>
+        <img src="img/kam-idris-hYb7kbu4x7E-unsplash 1.png" alt="">
+        <a href="#" alt="">sig</a>
     </div>
   </section>
+
+  <!-- PRODUCTOS -->
 
   <section class="productos">
     <div class="titulo-productos">
       <h1>PRODUCTOS</h1>
       <img src="img/Arrow 1.svg" alt="flecha">
     </div>
-    <div class="carrusel">
-      <div class="card">
-
+    <div class="carousel">
+      <div class="carousel__contenedor">
+        <button aria-label="Anterior" class="carousel__anterior">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div class="carousel__lista">
+          <div class="carousel__elemento">
+            <img src="img/img productos/cocinas.png" alt="">
+            <p>Cocinas</p>
+          </div>
+          <div class="carousel__elemento">
+            <img src="img/img productos/racks.png" alt="">
+            <p>Racks</p>
+          </div>
+          <div class="carousel__elemento">
+            <img src="img/img productos/placards.png" alt="">
+            <p>Placards</p>
+          </div>
+          <div class="carousel__elemento">
+            <img src="img/img productos/cocinas.png" alt="">
+            <p>Cocinas</p>
+          </div>
+          <div class="carousel__elemento">
+            <img src="img/img productos/racks.png" alt="">
+            <p>Racks</p>
+          </div>
+        </div>
+        <button aria-label="Siguiente" class="carousel__siguiente">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
       </div>
+      <div role="tablist" class="carousel__indicadores"></div>
     </div>
   </section>
+
+  <!-- NOSOTROS -->
+
   <section class="nosotros">
     <div class="titulo-nosotros">
       <img src="img/Arrow 2.svg" alt="flecha">
       <h1>NOSOTROS</h1>
     </div>
   </section>
+
+  <!-- CONTACTO -->
+
   <section class="contacto">
     <div class="titulo-contacto">
       <h1>CONTACTO</h1>
@@ -80,6 +117,12 @@
       <a href="#">CONTACTO</a>
     </div>
   </footer>
+
+    <!-- SCRIPTS -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+  <script src="https://kit.fontawesome.com/f092dd9d6c.js" crossorigin="anonymous"></script>
   <script>
     function storeScroll() {
       document.documentElement.dataset.scroll = window.scrollY;
@@ -87,6 +130,7 @@
     document.addEventListener('scroll', function () { storeScroll() });
     storeScroll();
   </script>
+  <link rel="javaScript" href="script.js">
 </body>
 
 </html>
