@@ -19,7 +19,7 @@
     width: 30px;
     height: 30px;
     border: none;
-    top: calc(50% -35px);
+    top: calc(50% - 35px);
     cursor: pointer;
     line-height: 30px;
     text-align: center;
@@ -29,5 +29,5 @@
 }
 
 .carousel__anterior{
-    left:-300px
+    left:-30px
 }
