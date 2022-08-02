@@ -1,10 +1,10 @@
-.titulo-productos{
+.titulo-nosotros{
     display: flex;
-    
+   
     
 }
 
-.titulo-productos h1{
+.titulo-nosotros h1{
     font-size: var(--FontTitle);
     font-weight: 400;
 }

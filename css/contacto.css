@@ -1,10 +1,9 @@
-.titulo-productos{
+.titulo-contacto{
     display: flex;
-    
-    
+   
 }
 
-.titulo-productos h1{
+.titulo-contacto h1{
     font-size: var(--FontTitle);
     font-weight: 400;
 }

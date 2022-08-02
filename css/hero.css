@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: column;
     justify-content:center;
+    align-items: flex-start;
 }
 .heroTitle h1{
     font-size: var(--FontTitle);
@@ -17,6 +18,12 @@
     box-shadow: 23px 23px white, 25px 25px olive, 25px 21px olive, 21px 25px olive;
     width: 450px;
     margin: 20px;
+    animation: urlChange;
+}
+@keyframes urlChange{
+    from{background-image: url("");}
+    
+    to {background-image: url("");}
 }
 .heroCarusel{
     box-sizing:border-box;
