@@ -1,6 +1,6 @@
 .hero{
     display: flex;
-    padding: 50px 150px;
+    padding: 150px 150px;
 }
 .heroTitle{
     display: flex;
@@ -18,12 +18,13 @@
     box-shadow: 23px 23px white, 25px 25px olive, 25px 21px olive, 21px 25px olive;
     width: 450px;
     margin: 20px;
-    animation: urlChange;
+    animation-name: urlChange;
+    animation-duration: 13s;
 }
 @keyframes urlChange{
-    from{background-image: url("");}
-    
-    to {background-image: url("");}
+    from{background-image: url("css/Rectangle 4.png");}
+    50%{background-image: url("css/kam-idris-hYb7kbu4x7E-unsplash 1.png");}
+    to {background-image: url("css/Rectangle 4.png");}
 }
 .heroCarusel{
     box-sizing:border-box;

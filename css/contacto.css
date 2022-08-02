@@ -1,6 +1,6 @@
 .titulo-contacto{
     display: flex;
-   
+    justify-content: flex-end;
 }
 
 .titulo-contacto h1{
