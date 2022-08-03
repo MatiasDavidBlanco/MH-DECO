@@ -29,16 +29,32 @@
   </nav>
   <section class="hero">
     <div class="heroTitle">
-      <h1>Muebles Unicos</h1> <h1>A tu disposición</h1>
+      <h1>Muebles Unicos</h1>
+      <h1>A tu disposición</h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus maxime voluptas, illo officiis hic,
         tempora incidunt voluptatem optio ut dolorem saepe dolor quas? Cum debitis, ratione quidem voluptas harum natus!
       </p>
       <a href="#">Explorar Productos</a>
     </div>
     <div class="heroCarusel">
-      <a href="#" alt="">atras</a>
-        <img src="img/img1.png" alt="">
-        <a href="#" alt="">sig</a>
+      <div class="caruselBoton">
+        <button aria-label="Previous" class="prev">«</button>
+        <div class="CaruselImages">
+          <img id="Slider1" src="img/img productos/racks.png" alt="">
+          <img id="Slider2" src="img/img productos/placards.png" alt="">
+          <img id="Slider3" src="img/img productos/racks.png" alt="">
+          <img id="Slider4" src="img/img productos/cocinas.png" alt="">
+        </div>
+        <button aria-label="Next" class="next"> » </button>
+      </div>
+      <!-- <div role="tablist" class="caruselDot"></div> -->
+      <div class="caruselDot">
+        <a href="#Slider1" class="gliter-dot"> </a>
+        <a href="#Slider2" class="gliter-dot"> </a>
+        <a href="#Slider3" class="gliter-dot"> </a>
+        <a href="#Slider4" class="gliter-dot"> </a>
+      </div>
+
     </div>
   </section>
 
@@ -100,7 +116,7 @@
       <h1>CONTACTO</h1>
       <img src="img/Arrow 1.svg" alt="flecha">
     </div>
-   
+
   </section>
 
 
@@ -119,7 +135,7 @@
     </div>
   </footer>
 
-    <!-- SCRIPTS -->
+  <!-- SCRIPTS -->
 
 
   <!-- <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script> -->
@@ -132,7 +148,21 @@
     document.addEventListener('scroll', function () { storeScroll() });
     storeScroll();
   </script>
-  <script src="script.js"></script>
+  <script>
+    window.addEventListener('load', function () {
+      new Glider(document.querySelector('.CaruselImages'), {
+        setting- name: setting - value;
+      slidesToShow: 1,
+        dots: 'indicatrDots',
+          draggable: false,
+            arrows: {
+        prev: '.prev',
+          next: '.next'
+      }
+    });
+});
+  </script>
+  <link rel="javaScript" href="script.js">
 </body>
 
 </html>

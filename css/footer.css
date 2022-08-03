@@ -47,3 +47,9 @@ footer h1{
     text-shadow: 1px 0.5px 5px var(--colorBlack);
     padding: 10px;
 }
+@media (min-width:700px) {
+    footer{
+        flex-direction: column;
+    }
+    
+}

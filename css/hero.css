@@ -1,12 +1,12 @@
 .hero{
     width:100%;
     display: flex;
-    padding: 100px 100px;
-    display:flex;
+    padding: 100px 0px;
     flex-wrap:wrap;
+    justify-content: center;
 }
 .heroTitle{
-    width:50%;
+    width:40%;
     display: flex;
     flex-direction: column;
     justify-content:center;
@@ -19,19 +19,72 @@
     text-align:start;
     font-size: var(--FontParagraf);
 }
-.heroCarusel img{
-    width:50%;
-    box-shadow: 23px 23px white, 25px 25px var(--colorPrincipal), 25px 21px var(--colorPrincipal), 21px 25px var(--colorPrincipal);
-    margin: 20px;
-}
-.hero a{
+.heroTitle a{
+    color: var(--colorWhite);
+    width: fit-content;
     text-decoration:none;
     text-align:center;
+    margin: 15vw 120px;
     padding:20px;
+    background: var(--colorPrincipal);
+    box-shadow: 20px 20px white, 22px 22px var(--colorPrincipal), 22px 18px var(--colorPrincipal), 18px 22px var(--colorPrincipal);
+   
 }
-
-.heroCarusel{
-    box-sizing:border-box;
+.CaruselImages img{
+    box-shadow: 23px 23px white, 25px 25px var(--colorPrincipal), 25px 21px var(--colorPrincipal), 21px 25px var(--colorPrincipal);
+    max-width: 300px;
+    margin: 30px;
+    display: none;
+}
+.CaruselImages img:first-child{
     display: flex;
-    justify-content: center;
+}
+.heroCarusel a:target img{
+    display: flex;
+}
+.caruselDot a{
+    align-items: center;
+    background-color: var(--colorBlack);
+    font-size: 0px;
+    opacity: .4;
+    padding: 6px;
+    margin:15px 5px;
+    border-radius: 10px;
+}
+.caruselDot a.selected{
+    opacity: .6;
+}
+.caruselBoton{
+    display: flex;
+    
+} 
+.caruselBoton button{
+    box-sizing: content-box;
+    font-size: var(--FontTitle);
+    padding: 15px;
+    transition: .6s;
+}
+.caruselBoton button:hover{
+    background: var(--colorBlack);
+    color: var(--colorWhite);
+    opacity: .1;
+}
+.prev,.next{
+    border: none;
+    font-size: var(--FontTitle);
+    background-color: inherit;
+
+}
+.indicatrDots{
+    display: block;
+    cursor: pointer;
+    color: #ccc;
+    border-radius: 999px;
+    background: #ccc;
+    width: 12px;
+    height: 12px;
+    margin: 7px;
+}
+.indicatrDots.active{
+    background: #a89cc8;
 }

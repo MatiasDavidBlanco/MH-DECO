@@ -1,5 +1,5 @@
 nav {
-    z-index: 5;
+    z-index: 1;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -18,7 +18,7 @@ nav {
   }
   nav .menu a {
     text-decoration: none;
-    color: var(--colorWhite);
+    color: var(--colorBlack);
     padding: 7px;
     margin: 13px;
     transition: box-shadow 0.3s;
