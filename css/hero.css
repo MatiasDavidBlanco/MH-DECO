@@ -39,13 +39,13 @@
     align-items: center;
     background-color: var(--colorBlack);
     font-size: 0px;
-    opacity: .4;
+    opacity: .3;
     padding: 6px;
     margin:15px 5px;
     border-radius: 10px;
 }
 .caruselDot .step.active{
-    opacity: .6;
+    opacity: .7;
 }
 .caruselBoton{
     display: flex;
