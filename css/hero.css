@@ -31,12 +31,14 @@
    
 }
 .CaruselImages img{
-    box-shadow: 23px 23px white, 25px 25px var(--colorPrincipal), 25px 21px var(--colorPrincipal), 21px 25px var(--colorPrincipal);
-    max-width: 300px;
+    box-shadow: 23px 23px white, 25px 25px var(--colorPrincipal), 25px 21px var(--colorPrincipal), 21px 25px var(--colorPrincipal);     max-width: 300px;
     margin: 30px;
     display: none;
 }
-.CaruselImages img:first-child {
+.CaruselImages .glider-track{
+    max-width: 300px;
+}
+.CaruselImages img:first-child{
     display: flex;
 }
 .heroCarusel a:target img{
