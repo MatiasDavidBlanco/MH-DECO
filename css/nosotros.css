@@ -17,16 +17,23 @@ padding: 50px 0px;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    /* flex-wrap: wrap; */
 }
 .nosotrosInfo img{
     max-width:300px;
     margin: 0px 50px 0px 0px;
 }
+.ninfoContent {
+    padding: 0px 0px 0px 20px;
+}
 .ninfoContent h2,.ninfoContent p{
     text-align: start; 
     padding:10px;
-    width: calc(100% - img);
+}
+.ninfoContent h2{
+    font-size: var(--FontTitle);
+}
+.ninfoContent p{
+    font-size: var(--FontNameSection);
 }
 @media (max-width: 650px) {
     .nosotrosInfo{

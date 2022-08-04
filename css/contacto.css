@@ -1,9 +1,38 @@
+.contacto{
+    padding: 50px 0px;
+}
 .titulo-contacto{
     display: flex;
     justify-content: flex-end;
 }
-
+.titulo-contacto img{
+    width: 50%;
+}
 .titulo-contacto h1{
     font-size: var(--FontNameSection);
     font-weight: 400;
+}
+.contactInfo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px 0px;
+}
+.infoEmail{
+    box-sizing: content-box;
+    /* max-width: 40%; */
+    border: 2px solid var(--colorPrincipal);
+    padding: 30px;
+    margin: 10px;
+}
+.infoWapp{
+    box-sizing: content-box;
+    max-width: 40%;
+}
+.infoWapp img{
+    border:2px solid var(--colorBlack);
+    box-shadow: 20px 20px white, 22px 22px var(--colorPrincipal), 22px 18px var(--colorPrincipal), 18px 22px var(--colorPrincipal);
+}
+.infoWapp p{
+    width: 100%;
 }
