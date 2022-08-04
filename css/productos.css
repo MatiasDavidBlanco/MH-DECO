@@ -14,7 +14,7 @@
 
 .carousel__contenedor{
     position: relative;
-    /* padding: 100px; */
+    padding: 100px;
 }
 .carousel__anterior,
 .carousel__siguiente {
