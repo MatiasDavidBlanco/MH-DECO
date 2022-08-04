@@ -35,15 +35,6 @@
     margin: 30px;
     display: none;
 }
-.CaruselImages .glider-track{
-    max-width: 300px;
-}
-.CaruselImages img:first-child{
-    display: flex;
-}
-.heroCarusel a:target img{
-    display: flex;
-} 
 .caruselDot a{
     align-items: center;
     background-color: var(--colorBlack);
@@ -53,7 +44,7 @@
     margin:15px 5px;
     border-radius: 10px;
 }
-.caruselDot a.selected{
+.caruselDot .step.active{
     opacity: .6;
 }
 .caruselBoton{

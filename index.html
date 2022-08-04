@@ -39,21 +39,21 @@
     </div>
     <div class="heroCarusel">
       <div class="caruselBoton">
-        <button aria-label="Previous" class="prev">«</button>
+        <button class="prev" onclick="nextPrev(-1)">«</button>
         <div class="CaruselImages">
-          <img id="Slider1" src="img/img productos/racks.png" alt="">
-          <img id="Slider2" src="img/img productos/placards.png" alt="">
-          <img id="Slider3" src="img/img productos/racks.png" alt="">
-          <img id="Slider4" src="img/img productos/cocinas.png" alt="">
+          <img id="Slider1" class="tab" src="img/img productos/racks.png" alt="">
+          <img id="Slider2" class="tab" src="img/img productos/placards.png" alt="">
+          <img id="Slider3" class="tab" src="img/img productos/racks.png" alt="">
+          <img id="Slider4" class="tab" src="img/img productos/cocinas.png" alt="">
         </div>
-        <button aria-label="Next" class="next"> » </button>
+        <button class="next" onclick="nextPrev(1)"> » </button>
       </div>
       <!-- <div role="tablist" class="caruselDot"></div> -->
       <div class="caruselDot">
-        <a href="#Slider1" class="gliter-dot"> </a>
-        <a href="#Slider2" class="gliter-dot"> </a>
-        <a href="#Slider3" class="gliter-dot"> </a>
-        <a href="#Slider4" class="gliter-dot"> </a>
+        <a href="#Slider1" class="step"> </a>
+        <a href="#Slider2" class="step"> </a>
+        <a href="#Slider3" class="step"> </a>
+        <a href="#Slider4" class="step"> </a>
       </div>
 
     </div>
@@ -148,15 +148,43 @@
     storeScroll();
   </script>
   <script>
-// new Glider(document.querySelector('.CaruselImages'), {
-//   slidesToShow: 1,
-//   dots: '.caruselDot',
-//   draggable: true,
-//   arrows: {
-//     prev: '.prev',
-//     next: '.next'
-//   }
-// });
+  var currentTab = 0; // Current tab is set to be the first tab (0)
+    showTab(currentTab); // Display the current tab
+
+    function showTab(n) {
+      // This function will display the specified tab of the form...
+      var x = document.getElementsByClassName("tab");
+      x[n].style.display = "flex";
+      //... and run a function that will display the correct step indicator:
+      fixStepIndicator(n)
+    }
+
+    function nextPrev(n) {
+      // This function will figure out which tab to display
+      var x = document.getElementsByClassName("tab");
+      // Hide the current tab:
+      x[currentTab].style.display = "none";
+      // Increase or decrease the current tab by 1:
+      currentTab = currentTab + n;
+      // if you have reached the end of the form...
+      if (currentTab >= x.length) {
+       currentTab = 0;
+      }else if(currentTab < 0){
+        currentTab = x.length-1;
+      }
+      // Otherwise, display the correct tab:
+      showTab(currentTab);
+    }
+
+    function fixStepIndicator(n) {
+      // This function removes the "active" class of all steps...
+      var i, x = document.getElementsByClassName("step");
+      for (i = 0; i < x.length; i++) {
+        x[i].className = x[i].className.replace(" active", "");
+      }
+      //... and adds the "active" class on the current step:
+      x[n].className += " active";
+    }
   </script>
   <link rel="javaScript" href="script.js">
 </body>
