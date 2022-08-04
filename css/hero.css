@@ -44,7 +44,7 @@
     margin:15px 5px;
     border-radius: 10px;
 }
-.caruselDot .step.active{
+.caruselDot a.step.active{
     opacity: .7;
 }
 .caruselBoton{
@@ -58,9 +58,7 @@
     transition: .6s;
 }
 .caruselBoton button:hover{
-    background: var(--colorBlack);
-    color: var(--colorWhite);
-    opacity: .1;
+    opacity: .4;
 }
 .prev,.next{
     border: none;
@@ -70,7 +68,7 @@
 }
 .indicatrDots{
     display: block;
-    cursor: pointer;
+    /* cursor: pointer; */
     color: #ccc;
     border-radius: 999px;
     background: #ccc;
