@@ -6,9 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MH-Deco</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
-  <script src="https://kit.fontawesome.com/f092dd9d6c.js" crossorigin="anonymous"></script>
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css"> -->
+  <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+  <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -67,7 +67,7 @@
       <img src="img/Arrow 1.svg" alt="flecha">
     </div>
     <div class="carousel">
-      <div class="carousel__contenedor">
+      <!-- <div class="carousel__contenedor">
         <button aria-label="Anterior" class="carousel__anterior">
           <i class="fa-solid fa-chevron-left"></i>
         </button>
@@ -96,8 +96,32 @@
         <button aria-label="Siguiente" class="carousel__siguiente">
           <i class="fa-solid fa-chevron-right"></i>
         </button>
+      </div> -->
+      <!-- <div role="tablist" class="carousel__indicadores"></div> -->
+
+      <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide"><img src="img/img productos/cocinas.png" alt="" srcset=""></li>
+            <li class="glide__slide"><img src="img/img productos/cocinas.png" alt="" srcset=""></li>
+            <li class="glide__slide"><img src="img/img productos/cocinas.png" alt="" srcset=""></li>
+          </ul>
+        </div>
+       
+
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+        </div>
+
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+          <button class="glide__bullet" data-glide-dir="=0"></button>
+          <button class="glide__bullet" data-glide-dir="=1"></button>
+          <button class="glide__bullet" data-glide-dir="=2"></button>
+        </div>
+
       </div>
-      <div role="tablist" class="carousel__indicadores"></div>
+
     </div>
   </section>
 
@@ -139,7 +163,12 @@
   <!-- SCRIPTS -->
 
 
- 
+  <!-- <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+  <script src="https://kit.fontawesome.com/f092dd9d6c.js" crossorigin="anonymous"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script>
+    new Glide('.glide').mount()
+  </script>
   <script>
     function storeScroll() {
       document.documentElement.dataset.scroll = window.scrollY;
