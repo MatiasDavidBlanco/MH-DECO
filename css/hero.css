@@ -24,8 +24,8 @@
     width: fit-content;
     text-decoration:none;
     text-align:center;
-    margin: 15vw 120px;
-    padding:20px;
+    margin: 1vw 120px;
+    padding:15px;
     background: var(--colorPrincipal);
     box-shadow: 20px 20px white, 22px 22px var(--colorPrincipal), 22px 18px var(--colorPrincipal), 18px 22px var(--colorPrincipal);
    
@@ -36,12 +36,12 @@
     margin: 30px;
     display: none;
 }
-.CaruselImages img:first-child{
+.CaruselImages img:first-child {
     display: flex;
 }
 .heroCarusel a:target img{
     display: flex;
-}
+} 
 .caruselDot a{
     align-items: center;
     background-color: var(--colorBlack);

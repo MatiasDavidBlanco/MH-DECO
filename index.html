@@ -149,17 +149,14 @@
     storeScroll();
   </script>
   <script>
-    window.addEventListener('load', function () {
-      new Glider(document.querySelector('.CaruselImages'), {
-        setting- name: setting - value;
-      slidesToShow: 1,
-        dots: 'indicatrDots',
-          draggable: false,
-            arrows: {
-        prev: '.prev',
-          next: '.next'
-      }
-    });
+new Glider(document.querySelector('.CaruselImages'), {
+  slidesToShow: 1,
+  dots: '.caruselDot',
+  draggable: true,
+  arrows: {
+    prev: '.prev',
+    next: '.next'
+  }
 });
   </script>
   <link rel="javaScript" href="script.js">
