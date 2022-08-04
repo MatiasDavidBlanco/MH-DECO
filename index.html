@@ -114,6 +114,23 @@
       <img src="img/Arrow 2.svg" alt="flecha">
       <h1>NOSOTROS</h1>
     </div>
+    <div class="nosotrosInfo">
+      <div class="ninfoContent">
+        <h2>Calidad premium</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem, distinctio officiis ut velit
+          veritatis doloribus ad voluptatibus soluta inventore architecto provident dolores obcaecati sapiente ipsam.
+          Inventore nihil reprehenderit sed?</p>
+        <h2>Diseños unicos</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatum nam laudantium commodi nobis numquam.
+          Consequatur laudantium magnam earum eos officiis asperiores, quibusdam perspiciatis blanditiis iste distinctio
+          non sit deserunt.</p>
+        <h2>Excelencia Garantizada</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat, praesentium impedit aspernatur corporis
+          consequatur minus pariatur veniam quos distinctio illum quidem, amet quas sint soluta accusamus rerum
+          recusandae officiis atque.</p>
+      </div>
+      <img src="img/NSTsection.png" alt="">
+    </div>
   </section>
 
   <!-- CONTACTO -->
@@ -155,7 +172,7 @@
     storeScroll();
   </script>
   <script>
-  var currentTab = 0; // Current tab is set to be the first tab (0)
+    var currentTab = 0; // Current tab is set to be the first tab (0)
     showTab(currentTab); // Display the current tab
 
     function showTab(n) {
@@ -175,9 +192,9 @@
       currentTab = currentTab + n;
       // if you have reached the end of the form...
       if (currentTab >= x.length) {
-       currentTab = 0;
-      }else if(currentTab < 0){
-        currentTab = x.length-1;
+        currentTab = 0;
+      } else if (currentTab < 0) {
+        currentTab = x.length - 1;
       }
       // Otherwise, display the correct tab:
       showTab(currentTab);

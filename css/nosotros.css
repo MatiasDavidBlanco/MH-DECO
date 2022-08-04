@@ -1,10 +1,41 @@
+.nosotros{
+padding: 50px 0px;
+}
 .titulo-nosotros{
     display: flex;
-    justify-content: flex-start;
-    
+    justify-content: flex-start; 
 }
-
+.titulo-nosotros img{
+    width: 50%;
+}
 .titulo-nosotros h1{
     font-size: var(--FontNameSection);
     font-weight: 400;
+}
+.nosotrosInfo{
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+.nosotrosInfo img{
+    max-width:150px;
+    max-height: 300px;
+    margin: 0px 50px 0px 0px;
+}
+.ninfoContent h2,.ninfoContent p{
+    text-align: start; 
+    padding:10px;
+    width: calc(100% - img);
+}
+@media (max-width: 650px) {
+    .nosotrosInfo{
+        flex-wrap: wrap;
+    }
+    .nosotrosInfo img{
+        transform: scaleX(-1);
+        padding: 0px;
+        margin: 0px;
+    }
 }
