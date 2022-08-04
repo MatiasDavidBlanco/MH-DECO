@@ -20,8 +20,7 @@ padding: 50px 0px;
     /* flex-wrap: wrap; */
 }
 .nosotrosInfo img{
-    max-width:150px;
-    max-height: 300px;
+    max-width:300px;
     margin: 0px 50px 0px 0px;
 }
 .ninfoContent h2,.ninfoContent p{
