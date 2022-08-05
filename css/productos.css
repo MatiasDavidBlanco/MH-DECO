@@ -12,42 +12,82 @@
 
 /* --- --- CAROUSEL --- --- */
 
-.carousel__contenedor{
-    position: relative;
-    padding: 100px;
+
+.carousel__contenedor {
+	position: relative;
 }
+
 .carousel__anterior,
 .carousel__siguiente {
-    position: absolute;
-    display: block;
-    width: 30px;
-    height: 30px;
-    border: none;
-    top: calc(50% - 35px);
-    cursor: pointer;
-    line-height: 30px;
-    text-align: center;
-    background: none;
-    color: rgb(8, 8, 8);
-    opacity: 20%;
-    
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 30px;
+	border: none;
+	top: calc(50% - 35px);
+	cursor: pointer;
+	line-height: 30px;
+	text-align: center;
+	background: none;
+	color: rgb(0, 0, 0);
+	opacity: 20%;
 }
+
 .carousel__anterior:hover,
-.carousel__siguiente:hover{
-    opacity: 100%;
+.carousel__siguiente:hover {
+	opacity: 100%;
 }
 
-.carousel__anterior{
-    left: 50px
-}
-.carousel__siguiente{
-    right: 50px
-} 
-
-.carousel__lista{
-     overflow: hidden;
+.carousel__anterior {
+	left: -30px;
 }
 
-.carousel__elemento{
-    text-align: center;
+.carousel__siguiente {
+	right: -30px;
 }
+
+.carousel__lista {
+	overflow: hidden;
+}
+
+.carousel__elemento {
+	text-align: center;
+	height: auto;
+    width: 400px;
+	margin: 30px;
+}
+
+.carousel__elemento img:hover{
+	filter: brightness(125%);
+	-webkit-box-shadow: 0px 0px 14px 6px rgba(0,0,0,0.39); 
+	box-shadow: 0px 0px 14px 6px rgba(0,0,0,0.39);
+}
+
+.carousel__elemento p{
+	background-color: #7A5012C7;
+    position: relative;
+    top: -80px;
+    height: 61px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.carousel__indicadores .glider-dot {
+	display: block;
+	width: 30px;
+	height: 4px;
+	background: #fff;
+	opacity: .2;
+	border-radius: 0;
+}
+
+.carousel__indicadores .glider-dot:hover {
+	opacity: .5;
+}
+
+.carousel__indicadores .glider-dot.active {
+	opacity: 1;
+}
+
