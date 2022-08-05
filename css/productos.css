@@ -39,11 +39,11 @@
 }
 
 .carousel__anterior {
-	left: -30px;
+	left: 10px;
 }
 
 .carousel__siguiente {
-	right: -30px;
+	right: 10px;
 }
 
 .carousel__lista {
@@ -55,6 +55,7 @@
 	height: auto;
     width: 400px;
 	margin: 30px;
+    padding: 20px;
 }
 
 .carousel__elemento img:hover{
@@ -78,7 +79,7 @@
 	display: block;
 	width: 30px;
 	height: 4px;
-	background: #fff;
+	background: rgb(17, 17, 17);
 	opacity: .2;
 	border-radius: 0;
 }
