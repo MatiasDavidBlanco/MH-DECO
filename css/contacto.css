@@ -63,6 +63,7 @@
 .infoWapp img{
     border:2px solid var(--colorBlack);
     box-shadow: 20px 20px white, 22px 22px var(--colorPrincipal), 22px 18px var(--colorPrincipal), 18px 22px var(--colorPrincipal);
+    margin:40px;
 }
 .infoWapp p{
     font-size: var(--FontNameSection);
