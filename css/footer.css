@@ -37,7 +37,7 @@ footer h1{
 }
 
 .footer-menu a{
-    font-size: var(--FontNameSection);
+    font-size: var(--FontParagraf);
     text-decoration: none;
     color: var(--colorWhite);
     padding: 10px;
