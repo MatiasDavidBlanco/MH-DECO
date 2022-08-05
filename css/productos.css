@@ -15,6 +15,11 @@
 
 .carousel__contenedor {
 	position: relative;
+    margin: 30px;
+}
+
+.carousel__contenedor i{
+    font-size: 30px;
 }
 
 .carousel__anterior,
@@ -66,6 +71,7 @@
 
 .carousel__elemento p{
 	background-color: #7A5012C7;
+    color: white;
     position: relative;
     top: -80px;
     height: 61px;
