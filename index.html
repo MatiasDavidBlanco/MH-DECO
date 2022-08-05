@@ -38,14 +38,14 @@
     </div>
     <div class="heroCarusel">
       <div class="caruselBoton">
-        <button class="prev" onclick="nextPrev(-1)">«</button>
+        <button class="prev" onclick="nextPrev(-1)"> <i class="fas fa-chevron-left"></i></button>
         <div class="CaruselImages">
           <img id="Slider1" class="tab" src="img/img productos/racks.png" alt="">
           <img id="Slider2" class="tab" src="img/img productos/placards.png" alt="">
           <img id="Slider3" class="tab" src="img/img productos/Table.png" alt="">
           <img id="Slider4" class="tab" src="img/img productos/cocinas.png" alt="">
         </div>
-        <button class="next" onclick="nextPrev(1)"> » </button>
+        <button class="next" onclick="nextPrev(1)"><i class="fas fa-chevron-right"></i></button>
       </div>
     </div>
   </section>
@@ -180,6 +180,12 @@
     storeScroll();
   </script>
   <script>
+    const myTimeout = setInterval(move, 5000);
+
+function move() {
+ nextPrev(1);
+}
+
     var currentTab = 0; // Current tab is set to be the first tab (0)
     showTab(currentTab); // Display the current tab
 
