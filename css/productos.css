@@ -44,11 +44,11 @@
 }
 
 .carousel__anterior {
-	left: 10px;
+	left: -15px;
 }
 
 .carousel__siguiente {
-	right: 10px;
+	right: 15px;
 }
 
 .carousel__lista {
@@ -59,7 +59,7 @@
 	text-align: center;
 	height: auto;
     width: 400px;
-	margin: 30px;
+	margin: 20px;
     padding: 20px;
 }
 
@@ -73,7 +73,7 @@
 	background-color: #7A5012C7;
     color: white;
     position: relative;
-    top: -80px;
+    top: -66px;
     height: 61px;
     display: flex;
     align-content: center;
