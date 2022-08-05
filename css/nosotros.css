@@ -31,6 +31,7 @@ padding: 50px 0px;
 }
 .ninfoContent h2{
     font-size: var(--FontTitle);
+    font-weight: 400;
 }
 .ninfoContent p{
     font-size: var(--FontNameSection);

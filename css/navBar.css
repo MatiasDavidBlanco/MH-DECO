@@ -12,6 +12,7 @@ nav {
   nav h1{
     font-size:var(--FontTitle);
     font-weight: 500;
+    letter-spacing: 0.23em;
   }
   nav .menu {
     display: flex;

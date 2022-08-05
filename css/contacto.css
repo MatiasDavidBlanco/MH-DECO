@@ -14,25 +14,41 @@
 }
 .contactInfo{
     display: flex;
+    width: 80%;
     justify-content: center;
     flex-wrap: wrap;
     padding: 50px 0px;
 }
 .infoEmail{
     box-sizing: content-box;
-    /* max-width: 40%; */
+    width: 100%;
     border: 2px solid var(--colorPrincipal);
     padding: 30px;
     margin: 10px;
 }
+.infoEmail h3{
+    text-align: start;
+    font-size: var(--FontNameSection);
+}
+.infoEmail input[type="text"]{
+    min-width: 300px;
+    outline: none;
+    text-align: start;
+}
+.infoEmail textarea{
+    width: 300px;
+    height: 80px;
+    text-align: start;
+    outline:none; 
+} 
 .infoWapp{
     box-sizing: content-box;
-    max-width: 40%;
 }
 .infoWapp img{
     border:2px solid var(--colorBlack);
     box-shadow: 20px 20px white, 22px 22px var(--colorPrincipal), 22px 18px var(--colorPrincipal), 18px 22px var(--colorPrincipal);
 }
 .infoWapp p{
+    font-size: var(--FontNameSection);
     width: 100%;
 }
