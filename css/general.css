@@ -5,7 +5,7 @@
     --FontTitle:calc(1vw + 22px);
     --FontNameSection: calc(.7vw + 12px);
     --FontParagraf:calc(.5vw + 12px);
-    --FontLitle:calc(.5vw + 9);
+    --FontLitle:calc(.5vw + 9px);
 }
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,500;0,600;1,100;1,200;1,400&display=swap');
 *{

@@ -1,6 +1,7 @@
 .hero{
     width:100%;
     display: flex;
+    flex-direction: row-reverse;
     padding: 100px 0px;
     flex-wrap:wrap;
     justify-content: center;
@@ -78,4 +79,10 @@
 }
 .indicatrDots.active{
     background: #a89cc8;
+}
+@media (max-width:750px) {
+    .heroTitle{
+        width: 80%;
+        height: 300px;
+    }    
 }
