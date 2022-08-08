@@ -68,24 +68,29 @@
 
           <div class="carousel__lista">
             <div class="carousel__elemento">
-              <a href=""><img src="img/img productos/cocinas.png" alt="cocinas"></a>
-              <p>COCINAS</p>
+              <a href=""><img src="img/img productos/cocinas.png" alt="cocinas">
+                <p>COCINAS</p>
+              </a>
             </div>
             <div class="carousel__elemento">
-              <a href=""><img src="img/img productos/racks.png" alt="racks"></a>
-              <p>RACKS</p>
+              <a href=""><img src="img/img productos/racks.png" alt="racks">
+                <p>RACKS</p>
+              </a>
             </div>
             <div class="carousel__elemento">
-              <a href=""><img src="img/img productos/placards.png" alt="placards"></a>
-              <p>PLACARDS</p>
+              <a href=""><img src="img/img productos/placards.png" alt="placards">
+                <p>PLACARDS</p>
+              </a>
             </div>
             <div class="carousel__elemento">
-              <a href=""><img src="img/img productos/cocinas.png" alt="cocinas"></a>
-              <p>CAMAS</p>
+              <a href=""><img src="img/img productos/cocinas.png" alt="cocinas">
+                <p>CAMAS</p>
+              </a>
             </div>
             <div class="carousel__elemento">
-              <a href=""><img src="img/img productos/racks.png" alt="placards"></a>
-              <p>CAMAS</p>
+              <a href=""><img src="img/img productos/racks.png" alt="placards">
+                <p>CAMAS</p>
+              </a>
             </div>
           </div>
 
@@ -194,8 +199,6 @@
       // This function will display the specified tab of the form...
       var x = document.getElementsByClassName("tab");
       x[n].style.display = "flex";
-      //... and run a function that will display the correct step indicator:
-      fixStepIndicator(n)
     }
 
     function nextPrev(n) {
@@ -213,16 +216,6 @@
       }
       // Otherwise, display the correct tab:
       showTab(currentTab);
-    }
-
-    function fixStepIndicator(n) {
-      // This function removes the "active" class of all steps...
-      var i, x = document.getElementsByClassName("step");
-      for (i = 0; i < x.length; i++) {
-        x[i].className = x[i].className.replace(" active", "");
-      }
-      //... and adds the "active" class on the current step:
-      x[n].className += " active";
     }
   </script>
 

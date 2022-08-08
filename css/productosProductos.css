@@ -1,0 +1,33 @@
+/* --- --- CAROUSEL --- --- */
+.carousel__lista {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.carousel__elemento {
+	text-align: center;
+	height: auto;
+    width: 400px;
+	margin: 20px;
+    padding: 20px;
+}
+
+.carousel__elemento img:hover{
+	filter: brightness(125%);
+	-webkit-box-shadow: 0px 0px 14px 6px rgba(0,0,0,0.39); 
+	box-shadow: 0px 0px 14px 6px rgba(0,0,0,0.39);
+}
+
+.carousel__elemento p{
+    width: 105%;
+	background-color: #7A5012C7;
+    color: white;
+    position: relative;
+    top: -65px;
+    height: 61px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
