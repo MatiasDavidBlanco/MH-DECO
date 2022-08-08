@@ -3,7 +3,6 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 50px;
 }
 
 .footer-social{
@@ -22,12 +21,12 @@ footer{
 
 .footer-social p{
     padding: 5px;
-    font-size: var(--FontParagraf);
+    font-size: var(--FontLitle);
 }
 
 footer h1{
     color: var(--colorWhite);
-    font-size: var(--FontTitle);
+    font-size: var(--FontParagraf);
     font-weight: 400;
     line-height: 47px;
     letter-spacing: 0.23em;
@@ -37,11 +36,10 @@ footer h1{
 }
 
 .footer-menu a{
-    font-size: var(--FontParagraf);
+    font-size: var(--FontLitle);
     text-decoration: none;
     color: var(--colorWhite);
     padding: 10px;
- 
 }
 .footer-menu a:hover{
     text-shadow: 1px 0.5px 5px var(--colorBlack);

@@ -17,9 +17,6 @@
     font-size: var(--FontTitle);
     margin: 0px;
 }
-.heroTitle h1:last-child{
-    font-weight: 300;
-}
 .heroTitle p{
     text-align:start;
     font-size: var(--FontParagraf);
