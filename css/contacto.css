@@ -6,7 +6,7 @@
     justify-content: flex-end;
 }
 .titulo-contacto img{
-    width: 50%;
+    max-width: 50%;
 }
 .titulo-contacto h1{
     font-size: var(--FontNameSection);

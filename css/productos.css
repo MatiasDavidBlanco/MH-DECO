@@ -3,7 +3,9 @@
     justify-content: flex-end;
     
 }
-
+.titulo-productos img{
+	width: calc(50% - 70px);
+}
 .titulo-productos h1{
     font-size: var(--FontNameSection);
     font-weight: 400;
