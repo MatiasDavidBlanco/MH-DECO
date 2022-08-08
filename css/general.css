@@ -17,3 +17,7 @@
 input[type="checkbox"]{
     display:none;
 }
+
+htm{
+    scroll-behavior: smooth;
+}
