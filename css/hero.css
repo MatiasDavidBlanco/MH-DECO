@@ -32,7 +32,8 @@
     box-shadow: 10px 10px white, 12px 12px var(--colorPrincipal), 12px 8px var(--colorPrincipal), 8px 12px var(--colorPrincipal);
 }
 .CaruselImages img{
-    box-shadow: 23px 23px white, 25px 25px var(--colorPrincipal), 25px 21px var(--colorPrincipal), 21px 25px var(--colorPrincipal);     max-width: 300px;
+    box-shadow: 23px 23px white, 25px 25px var(--colorPrincipal), 25px 21px var(--colorPrincipal), 21px 25px var(--colorPrincipal);     
+    max-width: 450px;
     margin: 30px;
     display: none;
 }
