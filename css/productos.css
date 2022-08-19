@@ -75,12 +75,13 @@
 	background-color: var(--colorPrincipal);
     color: white;
     position: relative;
-    top: -65px;
-    height: 61px;
+    top: -5px;
+    height: 15%;
     display: flex;
     align-content: center;
     justify-content: center;
     flex-direction: column;
+    font-size: var(--FontLitle);
 }
 
 .carousel__indicadores .glider-dot {
