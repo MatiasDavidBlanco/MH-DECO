@@ -75,8 +75,8 @@
 	background-color: var(--colorPrincipal);
     color: white;
     position: relative;
-    top: -5px;
-    height: 15%;
+    top: -15px;
+    height: 10%;
     display: flex;
     align-content: center;
     justify-content: center;
