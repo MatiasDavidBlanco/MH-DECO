@@ -64,6 +64,9 @@
 	margin: 20px;
     padding: 20px;
 }
+.carousel__elemento a {
+	text-decoration: none;
+}
 
 .carousel__elemento img:hover{
 	filter: brightness(125%);

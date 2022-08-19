@@ -14,7 +14,7 @@
     text-align: center;
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
-    text-decoration: none;
+    
 }
 input[type="checkbox"]{
     display:none;
