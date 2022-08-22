@@ -106,10 +106,15 @@
 
 
 /* Carrusel Materiales */
-
+.materiales h1{
+	font-size: var(--FontNameSection);
+}
+.materiales p{
+	font-size: var(--FontLitle);
+}
 .carrusel-materiales {
 	
-	height: 300px;
+	height: 250px;
 	width: 100%;
 	top: 60px;
 	display: flex;
