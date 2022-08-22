@@ -3,7 +3,7 @@ var vwimg = document.querySelector('.imgConteiner');
 
 function buildIMG(carpeta){
   let imgs = "";
-  for(let i;i<10;i++){
+  for(let i=1;i<10;i++){
     imgs += `<img src="img/${carpeta}/${carpeta}(${i}).jpg" alt="${carpeta}" onClick="changeIMG(i)">`
   }
   li.innerHTML=imgs;
