@@ -34,7 +34,7 @@ padding: 50px 0px;
     
 }
 .ninfoContent p{
-    font-size: var(----FontLitle);
+    font-size: var(--FontParagraf);
 }
 @media (max-width: 650px) {
     .nosotrosInfo{
