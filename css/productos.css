@@ -148,19 +148,15 @@
 	color: var(--colorPrincipal);
 	font-weight: 300;
 	position: absolute;
-	left: 20px;
+	left: 30px;
 	top: 15px;
   }
 
   .card img{
 	position: absolute;
-	left: 20px;
-	top: 15px;
-	width: 100px;
-	height: 40px;
-	border: solid 3px black;
+    top: 60px;
+    left: 10px;
   }
-  
 
   .colores-materiales{
 	display: flex;
