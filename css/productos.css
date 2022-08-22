@@ -106,6 +106,10 @@
 
 
 /* Carrusel Materiales */
+
+.materiales{
+	margin-top: 70px;
+}
 .materiales h1{
 	font-size: var(--FontNameSection);
 }
