@@ -12,6 +12,7 @@ module-menu{
     width: 250px;
     overflow: hidden;
     object-fit: contain;
+    cursor: pointer;
   }
   
   .imgConteiner{
