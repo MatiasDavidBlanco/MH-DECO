@@ -9,5 +9,5 @@ function buildIMG(carpeta){
   li.innerHTML=imgs;
 }
 function changeIMG(carpeta,i){
-  vwimg.innerHTM=`<img src="img/${carpeta}/${carpeta} (${i}).jpg" alt="${carpeta}">`
+  vwimg.innerHTML=`<img src="img/${carpeta}/${carpeta} (${i}).jpg" alt="${carpeta}">`
 }

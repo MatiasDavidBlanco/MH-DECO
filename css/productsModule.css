@@ -14,9 +14,15 @@ module-menu{
     object-fit: contain;
     cursor: pointer;
   }
-  
+
   .imgConteiner{
-    background-color: blue;
-    width:66%;
-    height:600px;
+    display: flex;
+    width: 66%;
+    justify-content: center;
+    align-items: center;
   }
+  .imgConteiner img{
+    width: 80%;
+    height: 758px;
+    object-fit: contain;
+}
