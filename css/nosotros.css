@@ -25,16 +25,16 @@ padding: 50px 0px;
 .ninfoContent {
     padding: 0px 0px 0px 20px;
 }
-.ninfoContent h2,.ninfoContent p{
+.ninfoContent h1,.ninfoContent p{
     text-align: start; 
     padding:10px;
 }
-.ninfoContent h2{
-    font-size: var(--FontTitle);
-    font-weight: 400;
+.ninfoContent h1{
+    font-size: var(--FontNameSection);
+    
 }
 .ninfoContent p{
-    font-size: var(--FontNameSection);
+    font-size: var(----FontLitle);
 }
 @media (max-width: 650px) {
     .nosotrosInfo{
