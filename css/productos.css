@@ -110,7 +110,7 @@
 .carrusel-materiales {
 	
 	height: 300px;
-	width: 90%;
+	width: 100%;
 	top: 60px;
 	display: flex;
 	justify-content: center;
@@ -125,7 +125,7 @@
 	box-shadow: -14px -1px 15px 1px rgb(189,180,180);
 	transition: 0.4s ease-out;
 	position: relative;
-	left: 50px;
+	left: 0px;
 	top:50px;
   }
   
