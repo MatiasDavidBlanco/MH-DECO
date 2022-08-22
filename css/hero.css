@@ -18,6 +18,9 @@
     font-size: var(--FontTitle);
     margin: 20px;
 }
+.heroTitle h1:first-child{
+    font-weight: 300;
+}
 .heroTitle p{
     text-align:start;
     letter-spacing: 0.05em;;
