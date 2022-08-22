@@ -113,8 +113,7 @@
 	width: 90%;
 	top: 60px;
 	display: flex;
-	
-	
+	justify-content: center;
   }
   
   .card {
@@ -155,7 +154,6 @@
 
   .card img{
 	position: absolute;
-	
 	left: 20px;
 	top: 15px;
 	width: 100px;
@@ -163,6 +161,15 @@
 	border: solid 3px black;
   }
   
+
+  .colores-materiales{
+	display: flex;
+  }
+  .colores-texto{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+  }
 
   
  
