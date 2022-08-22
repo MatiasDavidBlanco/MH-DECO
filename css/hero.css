@@ -10,16 +10,17 @@
     width:40%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 .heroTitle h1{
     text-align: start;
     font-size: var(--FontTitle);
-    margin: 0px;
+    margin: 20px;
 }
 .heroTitle p{
     text-align:start;
+    letter-spacing: 0.05em;;
     font-size: var(--FontParagraf);
 }
 .heroTitle a{
@@ -27,6 +28,7 @@
     width: fit-content;
     text-decoration:none;
     text-align:center;
+    margin-top: 40px;
     padding:15px;
     background: var(--colorPrincipal);
     box-shadow: 10px 10px white, 12px 12px var(--colorPrincipal), 12px 8px var(--colorPrincipal), 8px 12px var(--colorPrincipal);
