@@ -31,11 +31,15 @@
     background: var(--colorPrincipal);
     box-shadow: 10px 10px white, 12px 12px var(--colorPrincipal), 12px 8px var(--colorPrincipal), 8px 12px var(--colorPrincipal);
 }
+.CaruselImages{
+    min-width: 500px;
+    min-height: 600px;
+}
 .CaruselImages img{
     box-shadow: 23px 23px white, 25px 25px var(--colorPrincipal), 25px 21px var(--colorPrincipal), 21px 25px var(--colorPrincipal);     
-    max-width: 450px;
-    max-height: 500px;
-    object-fit: cover important!; 
+    width: 500px;
+    height: 600px;
+    object-fit: cover; 
     margin: 30px;
     display: none;
 }
