@@ -1,5 +1,5 @@
-var li = document.getElementByClassName('imgsConteiner');
-var vwimg = document.getElementByClassName('imgConteiner');
+var li = document.querySelector('.imgsConteiner');
+var vwimg = document.querySelector('.imgConteiner');
 
 function buildIMG(carpeta){
   let imgs = "";
