@@ -34,6 +34,8 @@
 .CaruselImages img{
     box-shadow: 23px 23px white, 25px 25px var(--colorPrincipal), 25px 21px var(--colorPrincipal), 21px 25px var(--colorPrincipal);     
     max-width: 450px;
+    max-height: 500px;
+    object-fit: cover;
     margin: 30px;
     display: none;
 }
