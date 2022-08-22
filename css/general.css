@@ -3,7 +3,7 @@
     --colorWhite:#fff;
     --colorBlack:#000;
     --FontTitle:calc(1vw + 22px);
-    --FontNameSection: calc(.7vw + 12px);
+    --FontNameSection: calc(.7vw + 15px);
     --FontParagraf:calc(.5vw + 12px);
     --FontLitle:calc(.5vw + 7px);
 }
