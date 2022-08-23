@@ -1,14 +1,11 @@
 var li = document.querySelector('.imgsConteiner');
 var vwimg = document.querySelector('.imgConteiner');
-var a = ""
 
-function changeVar(value) {
-  window.location.href = '../MH-DECO/product.html'; 
-  a = value;
-}
-function loadPage() {
-  buildIMG(a);
-  changeIMG(a,1);
+function loadPage(){
+  let dirInfo = window.location.hash
+  let info = dirInfo.slice(1);
+  buildIMG(info);
+  changeIMG(info,1);
 }
 function buildIMG(carpeta) {
   let imgs = "";
