@@ -28,9 +28,9 @@ module-menu{
 }
 .generalConteiner{
   display: flex;
-  width: 66%;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .generalConteiner button{
