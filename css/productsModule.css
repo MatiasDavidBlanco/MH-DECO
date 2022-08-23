@@ -32,3 +32,18 @@ module-menu{
     justify-content: center;
     align-items: center;
 }
+
+.generalConteiner button{
+  box-sizing: content-box;
+  font-size: var(--FontTitle);
+  padding: 15px;
+  transition: .6s;
+}
+.generalConteiner button:hover{
+  opacity: .4;
+}
+.prev,.next{
+  border: none;
+  font-size: var(--FontTitle);
+  background-color: inherit;
+}
