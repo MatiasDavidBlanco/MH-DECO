@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/productsModule.css">
   <title>MH-Deco</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
 </head>
 
 <body onload="loadPage()">
@@ -36,7 +36,7 @@
     <div class="imgsConteiner"></div>
     <div class="generalConteiner">
       <button class="prev" onclick="nextPrev(-1)"> <i class="fas fa-chevron-left"></i></button>
-        <div class="imgConteiner"></div>
+      <div class="imgConteiner"></div>
       <button class="next" onclick="nextPrev(1)"><i class="fas fa-chevron-right"></i></button>
     </div>
   </module-menu>
@@ -62,17 +62,18 @@
 
 <script>
   function nextPrev(n) {
-   
-    var x = document.querySelector(".imgConteiner img"); 
-    var y = document.querySelector(".imgsConteiner img[id=' "+x.id+ " ' }]")
-    if((n=="-1")&&( x.id == "1")){
-     n=0; 
+
+    var x = document.querySelector(".imgConteiner img");
+    var y = document.querySelector(".imgsConteiner img[id='" + x.id + "']")
+    if ((n == "-1") && (x.id == "1")) {
+      n = 0;
     }
-    if (x.nextSibling.style.display=="none"){
-      n=0
+    if (y.nextSibling.style.display == "none") {
+      n = 0
     }
-    let np = x.id + n; 
-    changeIMG(x.alt,np);
+    let np = parseInt(x.id) + parseInt(n);
+    changeIMG(x.alt, np);
   }
 </script>
+
 </html>
