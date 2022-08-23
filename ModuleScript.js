@@ -7,6 +7,10 @@ function loadPage(){
   buildIMG(info);
   changeIMG(info,1);
 }
+function loadPage(value){
+  buildIMG(value);
+  changeIMG(value,1);
+}
 function buildIMG(carpeta) {
   let imgs = "";
   for (let i = 1; i < 40; i++) {
