@@ -26,3 +26,9 @@ module-menu{
     height: 758px;
     object-fit: contain;
 }
+.generalConteiner{
+  display: flex;
+  width: 66%;
+    justify-content: center;
+    align-items: center;
+}
