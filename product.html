@@ -61,19 +61,11 @@
 <script src="js/app.js"></script>
 
 <script>
-  var currentTab = 0; // Current tab is set to be the first tab (0)
-  showTab(currentTab); // Display the current tab
-
-  function showTab(n) {
-    // This function will display the specified tab of the form...
-    var x = document.getElementsByClassName("tab");
-    x[n].style.display = "flex";
-  }
-
   function nextPrev(n) {
-    // This function will figure out which tab to display
-    var x = document.querySelector(".imgConteiner img");
-    if((n=="-1")&&( x.id == 1)){
+   
+    var x = document.querySelector(".imgConteiner img"); 
+    var y = document.querySelector(".imgsConteiner img[id=' "+x.id+ " ' }]")
+    if((n=="-1")&&( x.id == "1")){
      n=0; 
     }
     if (x.nextSibling.style.display=="none"){

@@ -15,5 +15,5 @@ function buildIMG(carpeta) {
   li.innerHTML = imgs;
 }
 function changeIMG(carpeta, i) {
-  vwimg.innerHTML = `<img src="img/${carpeta}/${carpeta} (${i}).jpg" alt="${carpeta}">`
+  vwimg.innerHTML = `<img src="img/${carpeta}/${carpeta} (${i}).jpg" id="${i}" alt="${carpeta}">`
 }
