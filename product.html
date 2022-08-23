@@ -72,19 +72,15 @@
 
   function nextPrev(n) {
     // This function will figure out which tab to display
-    var x = document.getElementsByClassName("tab");
-    // Hide the current tab:
-    x[currentTab].style.display = "none";
-    // Increase or decrease the current tab by 1:
-    currentTab = currentTab + n;
-    // if you have reached the end of the form...
-    if (currentTab >= x.length) {
-      currentTab = 0;
-    } else if (currentTab < 0) {
-      currentTab = x.length - 1;
+    var x = document.querySelector(".imgConteiner img");
+    if((n=="-1")&&( x.id == 1)){
+     n=0; 
     }
-    // Otherwise, display the correct tab:
-    showTab(currentTab);
+    if (x.nextSibling.style.display=="none"){
+      n=0
+    }
+    let np = x.id + n; 
+    changeIMG(x.alt,np);
   }
 </script>
 </html>
