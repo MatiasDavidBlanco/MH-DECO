@@ -28,3 +28,16 @@ function buildIMG(carpeta) {
 function changeIMG(carpeta, i) {
   vwimg.innerHTML = `<img src="img/${carpeta}/${carpeta} (${i}).jpg" id="${i}" alt="${carpeta}">`
 }
+
+function getFilesInsideFolder(path,search){
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function () {
+    if (this.readyState == 4 && this.status == 200) {
+     let datos = JSON.parse(this.responseText);
+        console.log(datos);
+    }
+  };
+  xhttp.open("GET", path+"/", true);
+xhttp.send();
+}
+getFilesInsideFolder("./img",'[href*=".jpg"]')
