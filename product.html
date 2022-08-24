@@ -64,14 +64,28 @@
   function nextPrev(n) {
     var x = document.querySelector(".imgConteiner img");
     var y = document.querySelector(".imgsConteiner img[id='" + x.id + "']")
-    if ((n == "-1") && (x.id == "1")) {
-      n = 0;
+    var np;
+    var Valt;
+    if (n == "-1") {
+      if(y.firstChild){
+        np = y.id;
+        Valt=y.alt;
+      }else{
+        np = y.previousSibling.id;
+        Valt = y.previousSibling.alt;
+      }
     }
-    if ((y.nextSibling.style.display == "none") && (n == 1)) {
-      n = 0
+    if  (n == 1) {
+      if(y.nextSibling.style.display == "none"){
+        np = y.id;
+        Valt=y.alt;
+      }else{
+        np = y.nextSibling.id;
+        Valt = y.nextSibling.alt;
+      }
     }
-    let np = parseInt(x.id) + parseInt(n);
-    changeIMG(x.alt, np);
+    
+    changeIMG(Valt, np);
   }
 </script>
 
