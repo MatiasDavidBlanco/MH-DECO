@@ -1,11 +1,21 @@
 var li = document.querySelector('.imgsConteiner');
 var vwimg = document.querySelector('.imgConteiner');
-
+var muestras = ["cocina","placard","rack","camas","escritorio","otros"]
+var datos = ""
 function loadPage(){
   let dirInfo = window.location.hash
   let info = dirInfo.slice(1);
-  buildIMG(info);
-  changeIMG(info,1);
+  if(info==""){
+    for(i=0;i<muestras.length;i++){
+      datos+= buildIMG(muestras[i]);
+    }
+    li.innerHTML = datos;
+    changeIMG(muestras[0],1);
+  }else{
+    buildIMG(info);
+    changeIMG(info,1);
+  }
+  
 }
 function buildIMG(carpeta) {
   let imgs = "";
@@ -13,6 +23,7 @@ function buildIMG(carpeta) {
     imgs += `<img src="img/${carpeta}/${carpeta} (${i}).jpg" id="${i}" alt="${carpeta}" onClick="changeIMG('${carpeta}',${i})" onerror="this.style.display='none'">`
   }
   li.innerHTML = imgs;
+  return imgs;
 }
 function changeIMG(carpeta, i) {
   vwimg.innerHTML = `<img src="img/${carpeta}/${carpeta} (${i}).jpg" id="${i}" alt="${carpeta}">`
