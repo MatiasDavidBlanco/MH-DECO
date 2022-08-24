@@ -62,13 +62,12 @@
 
 <script>
   function nextPrev(n) {
-
     var x = document.querySelector(".imgConteiner img");
     var y = document.querySelector(".imgsConteiner img[id='" + x.id + "']")
     if ((n == "-1") && (x.id == "1")) {
       n = 0;
     }
-    if (y.nextSibling.style.display == "none") {
+    if ((y.nextSibling.style.display == "none") && (n == 1)) {
       n = 0
     }
     let np = parseInt(x.id) + parseInt(n);
