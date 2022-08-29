@@ -9,11 +9,13 @@ nav {
     width: 100%;
     transition: background-color, box-shadow 0.6s;
   }
-  nav h1{
+
+  .logo{
     color: var(--colorPrincipal);
     font-size:var(--FontTitle);
     font-weight: 500;
     letter-spacing: 0.23em;
+    text-decoration: none;
   }
   nav .menu {
     display: flex;
@@ -32,6 +34,44 @@ nav {
     background-color: rgba(255, 255, 255, 0);
     box-shadow: none;
   }
+
+
+
+  .dropdown-container {
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid rgb(33, 165, 154);
+    width: 200px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .dropdown-container > ul {
+    display: none;
+    padding: 5px;
+  }
+  .dropdown-container:hover > ul {
+    display: block;
+    border-top: 1px solid rgb(33, 165, 154);
+  }
+  .dropdown-container:hover > ul > li {
+    padding: 10px;
+    border-bottom: 1px solid #4f4f4f;
+    list-style: none;
+  }
+  .dropdown-container > ul > li > a {
+    text-decoration: none;
+    color: #4f4f4f;
+  }
+  .dropdown-container:hover > ul > li:hover {
+    background: white;
+  }
+  .dropdown-container:hover > ul > li:hover > a {
+    color: rgb(33, 165, 154);
+    font-weight: bold;
+  }
+  
 
   @media (max-width: 650px) {
     .navbar {
