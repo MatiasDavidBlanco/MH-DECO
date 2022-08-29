@@ -45,11 +45,12 @@ nav {
   }
   .dropdown-container > ul {
     display: none;
-    padding: 5px;
+    font-size: 12px;
     
   }
   .dropdown-container:hover > ul {
     display: block;
+    
 
   }
   .dropdown-container:hover > ul > li {
@@ -61,13 +62,12 @@ nav {
   }
   .dropdown-container > ul > li > a {
     text-decoration: none;
-    color: #e21f1f;
-    margin: -20px;
+    color: #000000;
+    
   }
 
   .dropdown-container:hover > ul > li:hover > a {
-    
-    /* font-weight: bold; */
+    margin: -20px;
   }
   
 
