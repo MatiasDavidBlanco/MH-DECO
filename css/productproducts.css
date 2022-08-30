@@ -45,6 +45,5 @@
 .listProduct a.\.selected{
     color: var(--colorPrincipal);
     font-weight: 700;
-    text-shadow: 0 0 1px #000000;
 }
 

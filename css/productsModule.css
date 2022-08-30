@@ -47,3 +47,12 @@ module-menu{
   font-size: var(--FontTitle);
   background-color: inherit;
 }
+.productsList{
+  position: relative;
+  top: 65px;
+}
+footer{
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
