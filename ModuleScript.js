@@ -51,7 +51,6 @@ function changeIMG(carpeta, i) {
   var vwimg = document.querySelector('.imgConteiner');
   vwimg.innerHTML = `<img src="img/${carpeta}/${carpeta} (${i}).jpg" id="${i}" onload="addBackgroundColor(${i})" alt="${carpeta}" ontouchend="setnextprev(event)">`
 }
-
 function setnextprev(event){
   var x = event.changedTouches[0].clientX;
   if (x< (screen.availWidth/2))  nextPrev(-1);
