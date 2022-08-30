@@ -85,3 +85,10 @@
         height: 300px;
     }    
 }
+
+@media (max-width:425px) {
+    /* .heroCarusel{
+        width: 10%;
+        
+    }     */
+}
