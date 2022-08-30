@@ -75,8 +75,7 @@ function addBackgroundColor(a){
       const element=imgslist[i];
       element.style.backgroundColor = "#ffffff"
       if(element.id == a){
-        document.getElementById(a).style.backgroundColor = "#000000";
+        document.getElementById(a).style.boxShadow = "#000000";
        }
-
   }
 }
