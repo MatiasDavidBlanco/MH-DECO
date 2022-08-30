@@ -49,9 +49,14 @@ function buildIMG(carpeta) {
 }
 function changeIMG(carpeta, i) {
   var vwimg = document.querySelector('.imgConteiner');
-  vwimg.innerHTML = `<img src="img/${carpeta}/${carpeta} (${i}).jpg" id="${i}" onload="addBackgroundColor(${i})" alt="${carpeta}">`
+  vwimg.innerHTML = `<img src="img/${carpeta}/${carpeta} (${i}).jpg" id="${i}" onload="addBackgroundColor(${i})" alt="${carpeta}" ontouchend="setnextprev(event)">`
 }
 
+function setnextprev(event){
+  var x = event.changedTouches[0].clientX;
+  if (x< (screen.availWidth/2))  nextPrev(-1);
+  else nextPrev(1);
+}
 function selectMu(type) {
   var mueb = document.querySelectorAll(".listProduct a");
   console.log("data info: " + type + " ");
