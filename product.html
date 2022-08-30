@@ -8,14 +8,15 @@
   <link rel="stylesheet" href="css/general.css">
   <link rel="stylesheet" href="css/navBar.css">
   <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="css/productos.css">
+  <!-- <link rel="stylesheet" href="css/productos.css"> -->
   <link rel="stylesheet" href="css/productsModule.css">
+  <link rel="stylesheet" href="css/productproducts.css">
   <title>MH-Deco</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"> -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css"> -->
 </head>
 
-<body onload="loadPage()">
+<body onload="loadPage()" onhashchange="loadPage()">
   <nav class="navbar" style="position: unset;">
     <h1>MH.DECO</h1>
     <label for="menuDisplay">
@@ -26,19 +27,22 @@
     <input type="checkbox" id="menuDisplay" />
     <div class="menu">
       <a href="/MH-DECO/#hero">Inicio</a>
-      <a href="/MH-DECO/#services">Productos</a>
-      <a href="/MH-DECO/#aproach-process">Nosotros</a>
-      <a href="/MH-DECO/#contact">Contacto</a>
+      <a href="/MH-DECO/#productos">Productos</a>
+      <a href="/MH-DECO/#nosotros">Nosotros</a>
+      <a href="/MH-DECO/#contacto">Contacto</a>
     </div>
   </nav>
+  <div class="listProduct">
+    <a href="product.html"onClick="loadPage();">&nbsp; PRODUCTOS&nbsp;</a><p>/</p>
+    <a href="product.html#cocina" onClick="loadPage();" alt="cocina">&nbsp;COCINAS &nbsp;</a><p>/</p>
+    <a href="product.html#placard" onClick="loadPage();" alt="placard">&nbsp;PLACARDS &nbsp;</a><p>/</p>
+    <a href="product.html#rack" onClick="loadPage();" alt="rack"> &nbsp;RACKS &nbsp;</a><p>/</p>
+    <a href="product.html#camas" onClick="loadPage();" alt="camas">&nbsp;CAMAS &nbsp;</a><p>/</p>
+    <a href="product.html#escritorio" onClick="loadPage();" alt="escritorio">&nbsp;ESCRITORIOS &nbsp;</a><p>/</p>
+    <a href="product.html#industriales" onClick="loadPage();" alt="industriales">&nbsp; MUEBLES INDUSTRIALES &nbsp;</a><p>/</p>
+    <a href="product.html#otros" onClick="loadPage();" alt="otros">&nbsp;OTROS &nbsp;</a>
+  </div>
   <module-menu>
-    <script type="text/javascript" src="ModuleScript.js"></script>
-    <div class="imgsConteiner"></div>
-    <div class="generalConteiner">
-      <button class="prev" onclick="nextPrev(-1)"> <i class="fas fa-chevron-left"></i></button>
-      <div class="imgConteiner"></div>
-      <button class="next" onclick="nextPrev(1)"><i class="fas fa-chevron-right"></i></button>
-    </div>
   </module-menu>
   <footer>
     <div class="footer-social">
@@ -67,24 +71,24 @@
     var np;
     var Valt;
     if (n == "-1") {
-      if(y.firstChild){
+      if (y.firstChild) {
         np = y.id;
-        Valt=y.alt;
-      }else{
+        Valt = y.alt;
+      } else {
         np = y.previousSibling.id;
         Valt = y.previousSibling.alt;
       }
     }
-    if  (n == 1) {
-      if(y.nextSibling.style.display == "none"){
+    if (n == 1) {
+      if (y.nextSibling.style.display == "none") {
         np = y.id;
-        Valt=y.alt;
-      }else{
+        Valt = y.alt;
+      } else {
         np = y.nextSibling.id;
         Valt = y.nextSibling.alt;
       }
     }
-    
+
     changeIMG(Valt, np);
   }
 </script>

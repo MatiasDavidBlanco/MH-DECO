@@ -1,0 +1,50 @@
+/* --- --- CAROUSEL --- --- */
+.carousel_lista {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.carousel__elemento {
+	margin: 20px;
+    padding: 20px;
+}
+.carousel__elemento img:hover{
+	filter: brightness(125%);
+	-webkit-box-shadow: 0px 0px 14px 6px rgba(0,0,0,0.39); 
+	box-shadow: 0px 0px 14px 6px rgba(0,0,0,0.39);
+}
+.carousel__elemento img{
+    max-width: 400px;
+    max-height: 430px;
+    object-fit: contain;
+}
+.carousel__elemento p{
+    text-transform: uppercase;
+    text-decoration: none;
+	background-color: var(--colorPrincipal);
+    color: white;
+    position: relative;
+    top: -64px;
+    height: 61px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.carousel__elemento a{
+    text-decoration: none;
+}
+.listProduct{
+    display: flex;
+    padding: 15px;
+}
+.listProduct a{
+    text-decoration: none;
+    color: var(--colorBlack);
+}
+.listProduct a.\.selected{
+    color: var(--colorPrincipal);
+    font-weight: 700;
+    text-shadow: 0 0 1px #000000;
+}
+
