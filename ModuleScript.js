@@ -25,7 +25,7 @@ function loadPage() {
     alli.innerHTML = datos;
   } else {
     datos = `<!--html-->
-    <div class="imgsConteiner"></div>
+    <div class="imgsConteiner" ontouchmove="SetScroll(event)"></div>
     <div class="generalConteiner">
       <button class="prev" onclick="nextPrev(-1)"> <i class="fas fa-chevron-left"></i></button>
       <div class="imgConteiner"></div>
@@ -50,6 +50,9 @@ function buildIMG(carpeta) {
 function changeIMG(carpeta, i) {
   var vwimg = document.querySelector('.imgConteiner');
   vwimg.innerHTML = `<img src="img/${carpeta}/${carpeta} (${i}).jpg" id="${i}" onload="addBackgroundColor(${i})" alt="${carpeta}" ontouchend="setnextprev(event)">`
+}
+function SetScroll(event){
+  
 }
 function setnextprev(event){
   var x = event.changedTouches[0].clientX;
