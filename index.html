@@ -14,7 +14,7 @@
 
 <body>
   <nav class="navbar">
-    <h1>MH.DECO</h1>
+    <a class="logo" href="#hero">MH.DECO</a>
     <label for="menuDisplay">
       <div class="menuDiv"></div>
       <div class="menuDiv"></div>
@@ -23,7 +23,18 @@
     <input type="checkbox" id="menuDisplay" />
     <div class="menu">
       <a href="#hero">Inicio</a>
-      <a href="#productos">Productos</a>
+      <div class="dropdown-container">
+        Productos
+        <ul>
+          <li><a href="#">Cocinas</a></li>
+          <li><a href="#">Placards</a></li>
+          <li><a href="#">Racks</a></li>
+          <li><a href="#">Camas</a></li>
+          <li><a href="#">Escritorios</a></li>
+          <li><a href="#">Industriales</a></li>
+          <li><a href="#">Otros</a></li>
+        </ul>
+      </div>
       <a href="#nosotros">Nosotros</a>
       <a href="#contacto">Contacto</a>
     </div>
@@ -74,19 +85,19 @@
           <div class="carousel__lista">
             <div class="carousel__elemento">
               <a href="product.html#cocina">
-                <img src="img/img productos/cocina.png" alt="cocinas" >
+                <img src="img/img productos/cocinas.png" alt="cocinas" >
                 <p>COCINAS</p>
               </a>
             </div>
             <div class="carousel__elemento">
               <a href="product.html#placard">
-                <img src="img/img productos/placard.png" alt="PLACARDS">
+                <img src="img/img productos/placards.png" alt="PLACARDS">
                 <p>PLACARDS</p>
               </a>
             </div>
             <div class="carousel__elemento">
               <a href="product.html#rack">
-                <img src="img/img productos/rack.png" alt="RACKS" >
+                <img src="img/img productos/rackTv.png" alt="RACKS" >
                 <p>RACKS</p>
               </a>
             </div>
@@ -104,7 +115,7 @@
             </div>
             <div class="carousel__elemento">
               <a href="product.html#industriales">
-                <img src="img/img productos/industrial.png" alt="MUEBLES INDUSTRIALES" >
+                <img src="img/img productos/muebleIndustrial.png" alt="MUEBLES INDUSTRIALES" >
                 <p>MUEBLES INDUSTRIALES</p>
               </a>
             </div>
