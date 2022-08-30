@@ -63,6 +63,10 @@ footer{
   .listProduct > * {
     display: none;
   }
+  .imgConteiner img{
+    width: 80%;
+    object-fit: contain;
+}
   module-menu{
     display: flex;
     flex-direction: column-reverse;
