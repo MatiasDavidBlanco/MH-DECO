@@ -56,3 +56,37 @@ footer{
   bottom: 0px;
   width: 100%;
 }
+@media (max-width:700px) {
+  .productsList{
+    top:0px;
+  }
+  .listProduct > * {
+    display: none;
+  }
+  module-menu{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .imgConteiner{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    object-fit: contain;
+  }
+  .generalConteiner button{
+    display: none;
+  }
+  .imgsConteiner{
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+  }
+  .imgsConteiner img{
+    height: 100px;
+    min-width:100px;
+  }
+  footer{
+    position:relative
+  }
+}
