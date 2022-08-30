@@ -78,7 +78,7 @@ footer{
   }
   .imgsConteiner{
     display: flex;
-    overflow: hidden;
+    overflow-x: auto;
     width: 100%;
     height: auto;
   }
