@@ -60,6 +60,7 @@ ol {
   display: none;
   position: absolute;
   min-width: 140px;
+  background-color: var(--colorWhite);
 }
 
 .menu li:hover>ul {
