@@ -68,14 +68,14 @@ function selectMu(type) {
 
 function addBackgroundColor(a){
   const imgcont = document.querySelectorAll(".imgsConteiner img");
-  document.getElementById(a).style.backgroundColor = "#000000";
+  document.getElementById(a).style.boxShadow = "#000000";
   var imgslist = document.querySelectorAll(".imgsConteiner img");
   console.log( imgslist);
   for (let i = 0; i < imgcont.length; i++) {
-      const element=imgslist[i];
-      element.style.backgroundColor = "#ffffff"
+      const element = imgslist[i];
+      element.style.boxShadow = "none"
       if(element.id == a){
-        document.getElementById(a).style.boxShadow = "#000000";
+        document.getElementById(a).style.boxShadow = " 0px 0px 15px #b38f59";
        }
   }
 }

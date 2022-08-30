@@ -14,9 +14,6 @@ module-menu{
     object-fit: contain;
     cursor: pointer;
   }
-  .imgsConteiner img:active{
-    background-color: blueviolet;
-  }
 
   .imgConteiner{
     display: flex;
