@@ -65,6 +65,7 @@ footer{
   }
   .imgConteiner img{
     width: 80%;
+    height: auto;
     object-fit: contain;
 }
   module-menu{
