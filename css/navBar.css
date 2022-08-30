@@ -32,6 +32,7 @@ nav .menu a {
 
 nav .menu a:hover {
   box-shadow: 0px 3px var(--colorPrincipal);
+  
 }
 
 [data-scroll="0"] nav {
@@ -65,15 +66,21 @@ ol {
 
 .menu li:hover>ul {
   display: block;
+  
 }
 
 .menu li ul li {
   position: relative;
+  margin: -20px;
 }
 
 .menu li ul li ul {
   right: -140px;
   top: 0px;
+}
+
+.product-cat:hover{
+  font-weight: 600;
 }
 
 
