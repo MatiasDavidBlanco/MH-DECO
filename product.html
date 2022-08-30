@@ -17,20 +17,30 @@
 </head>
 
 <body onload="loadPage()" onhashchange="loadPage()">
-  <nav class="navbar" style="position: unset;">
-    <h1>MH.DECO</h1>
+  <nav class="navbar">
+    <a class="logo" href="#hero">MH.DECO</a>
     <label for="menuDisplay">
       <div class="menuDiv"></div>
       <div class="menuDiv"></div>
       <div class="menuDiv"></div>
     </label>
     <input type="checkbox" id="menuDisplay" />
-    <div class="menu">
-      <a href="/MH-DECO/#hero">Inicio</a>
-      <a href="/MH-DECO/#productos">Productos</a>
-      <a href="/MH-DECO/#nosotros">Nosotros</a>
-      <a href="/MH-DECO/#contacto">Contacto</a>
-    </div>
+    <ul class="menu">
+      <li><a href="#hero">Inicio</a></li>
+      <li><a href="">Productos</a>
+        <ul>
+          <li><a class="product-cat" href="product.html#cocina">Cocinas</a></li>
+          <li><a class="product-cat" href="product.html#placard">Placards</a></li>
+          <li><a class="product-cat" href="product.html#rack">Racks</a></li>
+          <li><a class="product-cat" href="product.html#camas">Camas</a></li>
+          <li><a class="product-cat" href="product.html#escritotio">Escritorios</a></li>
+          <li><a class="product-cat" href="product.html#indutrailes">Industriales</a></li>
+          <li><a class="product-cat" href="product.html#otros">Otros</a></li>
+        </ul>
+      </li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
   </nav>
   <div class="listProduct">
     <a href="product.html"onClick="loadPage();">&nbsp; PRODUCTOS&nbsp;</a><p>/</p>
