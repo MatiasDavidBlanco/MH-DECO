@@ -102,7 +102,8 @@
     .caruselBoton button {
         box-sizing: content-box;
         font-size: var(--FontTitle);
-        padding: 15px;
+        padding: 0px;
         transition: .6s;
+        margin-top:-200px;
     }
 }
