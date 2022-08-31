@@ -22,7 +22,7 @@
     font-weight: 300;
 }
 .heroTitle p{
-    text-align:start;
+    text-align: center;
     letter-spacing: 0.05em;;
     font-size: var(--FontParagraf);
 }
