@@ -87,8 +87,22 @@
 }
 
 @media (max-width:425px) {
-    /* .heroCarusel{
-        width: 10%;
+    .hero{
+        padding: 0px;
         
-    }     */
+    }    
+    .CaruselImages img {
+        box-shadow: 23px 23px white, 25px 25px var(--colorPrincipal), 25px 21px var(--colorPrincipal), 21px 25px var(--colorPrincipal);
+        width: 276px;
+        height: 315px;
+        object-fit: cover;
+        margin: 15px;
+        display: none;
+    } 
+    .caruselBoton button {
+        box-sizing: content-box;
+        font-size: var(--FontTitle);
+        padding: 15px;
+        transition: .6s;
+    }
 }
