@@ -110,6 +110,9 @@
         margin-top: -230px;
         
     }
+    .heroTitle h1 {
+        margin: 10px;
+    }
     .productos{
         margin-top: 50px;
     }

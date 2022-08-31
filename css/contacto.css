@@ -30,7 +30,7 @@
 }
 .infoEmail h3{
     text-align: start;
-    font-size: var(--FontLitle);
+    font-size: var(--FontParagraf);
     font-weight: 400;
     padding: 15px 0px;
 }
