@@ -14,7 +14,7 @@
     align-items: center;
 }
 .heroTitle h1{
-    text-align: start;
+    text-align: center;
     font-size: var(--FontTitle);
     margin: 20px;
 }

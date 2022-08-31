@@ -179,5 +179,12 @@
   
   
 
-  
+  @media (max-width:425px) {
+	.card img {
+		position: absolute;
+		top: 82px;
+		left: 8px;
+		width: 78px;
+	} 
+}
  
