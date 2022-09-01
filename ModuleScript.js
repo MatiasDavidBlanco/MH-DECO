@@ -12,7 +12,7 @@ function loadPage() {
           <div class="carousel__elemento">
             <a href="product.html#${element}" onClick="loadPage();">
               <img src="img/img productos/${element}.png" alt="cocinas" >
-              <p>${element}</p>
+              <p>${element}s</p>
             </a>
           </div>
       <!--!html-->`
